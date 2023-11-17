@@ -33,6 +33,6 @@ const input = JSON.parse(fs.readFileSync("./mispGET.har", "utf-8"));
     filterStandardHeaders: true,
     addServersToPaths: true,
 }).then(({ spec }) => {
-    const outputPath = "../output/openapiGET.json";
+    const outputPath = "../output/openapiGET.raw.json";
     fs.writeFileSync(outputPath, JSON.stringify(spec, null, 2));
 });

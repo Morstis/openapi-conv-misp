@@ -9,6 +9,6 @@ generateSpec(input, {
   filterStandardHeaders: true,
   addServersToPaths: true,
 }).then(({ spec }) => {
-  const outputPath = "../output/openapiGET.json";
+  const outputPath = "../output/openapiGET.raw.json";
   fs.writeFileSync(outputPath, JSON.stringify(spec, null, 2));
 });
